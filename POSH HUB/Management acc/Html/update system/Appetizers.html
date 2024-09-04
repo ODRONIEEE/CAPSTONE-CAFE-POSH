@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers</title>
+    <link rel="stylesheet" href="/Management acc/Css/update system/Appetizers.css">
+</head>
+<body>
+    <header>
+        <a href="logo.html" id="logo"><img src="/IMages/logowhite.png" alt="Logo"></a>
+        <h1>archive cafe</h1>
+         <a href="user-profile.html" id="user-profile"><img src="/IMages/user.png" alt="User Profile"></a>
+    </header>
+    
+ 
+        <main>
+            <a href="../update.html"><button class="back-button" onclick="toggleBack()"> Back </button> </a>
+            <button class="update-system-button" >Update System</button>
+            <button class="appetizers-button">Appetizers</button>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Inventory Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-name="Nachos">
+                    <td>Nachos</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="French Fries">
+                    <td>French Fries</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Parmesan Potato Chips">
+                    <td>Parmesan Potato Chips</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+    <footer>
+        <p>"brewing timeless moments"</p>
+    </footer>
+
+    <!-- Modal for editing product -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Edit Product</h2>
+            <form id="editForm">
+                <label for="productName">Product Name:</label>
+                <p id="productName"></p>
+                <label for="productPrice">Price:</label>
+                <input type="text" id="productPrice" name="productPrice">
+                <label for="productQuantity">Quantity:</label>
+                <input type="number" id="productQuantity" name="productQuantity">
+                <div class="buttons">
+                    <button type="button" class="cancel-button" onclick="closeModal()">Cancel</button>
+                    <button type="button" class="save-button" onclick="saveProduct()">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for confirmation message -->
+    <div id="confirmationModal" class="modal">
+        <div class="confirmation-content">
+            <h2>SAVED!</h2>
+        </div>
+    </div>
+
+    <script src="/Management acc/JS/update system/Appetizers.js"></script>
+</body>
+</html>
+
+

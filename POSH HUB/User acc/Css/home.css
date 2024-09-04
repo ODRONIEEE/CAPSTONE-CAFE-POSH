@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4d2b2b;
+    color: #ffffff;
+    background-image: url('/IMages/background.jpg');
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d49a6a;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    height: 67px;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+header .title {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .auth-links {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .auth-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+header .auth-links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Burger menu */
+header .burger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+header .burger div {
+    background-color: #ffffff;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #4d2b2b;
+    padding: 20px;
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.sidebar button {
+    background-color: #d49a6a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar .about-info {
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.about-info ul {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main .coffee-cup {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    right: 20px;
+}
+
+footer {
+    background-color: #d49a6a;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+
+    header {
+        flex-direction: row;
+    }
+    
+    header .logo {
+        top: 4px;
+        left: 5px;
+    }
+
+    header .title {
+        font-size: 18px;
+    }
+
+    header .auth-links {
+        display: none;
+        flex-direction: column;
+        background-color: #d49a6a;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1001;
+    }
+
+    header .auth-links a {
+        margin: 10px 0;
+    }
+
+    header .burger {
+        display: flex;
+    }
+
+    header .auth-links.active {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    main .coffee-cup {
+        max-width: 80%;
+        position: relative;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .burger-menu-container {
+        position: relative;
+        z-index: 1002;
+    }
+}

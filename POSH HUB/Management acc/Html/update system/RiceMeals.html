@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Meals</title>
+    <link rel="stylesheet" href="/Management acc/Css/update system/RiceMeals.css">
+</head>
+<body>
+    <header>
+        <a href="/User acc/Html/home.html" id="logo"><img src="/IMages/logowhite.png" alt="Logo"></a>
+        <h1>archive cafe</h1>
+         <a href="/User acc/Html/login.html" id="user-profile"><img src="/IMages/user.png" alt="User Profile"></a>
+    </header>
+    
+        <main>
+            <a href="../update.html"><button class="back-button" onclick="toggleBack()"> Back </button> </a>
+            <button class="update-system-button" >Update System</button>
+            <button class="rice-meals-button">Rice Meals</button>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Inventory Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-name="Americano">
+                    <td>Americano</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Cafe Latte">
+                    <td>Cafe Latte</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Mocha">
+                    <td>Mocha</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="White Chocolate">
+                    <td>White Chocolate</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Salted Caramel">
+                    <td>Salted Caramel</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Caramel Macchiato">
+                    <td>Caramel Macchiato</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Butter Scotch">
+                    <td>Butter Scotch</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Cafe Con Leche">
+                    <td>Cafe Con Leche</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+                <tr data-name="Dirty Green Matcha">
+                    <td>Dirty Green Matcha</td>
+                    <td>Php 100.00</td>
+                    <td>20</td>
+                    <td><button class="edit-button">Edit Product</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+    <footer>
+        <p>"brewing timeless moments"</p>
+    </footer>
+
+    <!-- Modal for editing product -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Edit Product</h2>
+            <form id="editForm">
+                <label for="productName">Product Name:</label>
+                <p id="productName"></p>
+                <label for="productPrice">Price:</label>
+                <input type="text" id="productPrice" name="productPrice">
+                <label for="productQuantity">Quantity:</label>
+                <input type="number" id="productQuantity" name="productQuantity">
+                <div class="buttons">
+                    <button type="button" class="cancel-button" onclick="closeModal()">Cancel</button>
+                    <button type="button" class="save-button" onclick="saveProduct()">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for confirmation message -->
+    <div id="confirmationModal" class="modal">
+        <div class="confirmation-content">
+            <h2>SAVED!</h2>
+        </div>
+    </div>
+
+    <script src="/Management acc/JS/update system/RiceMeals.js"></script>
+</body>
+</html>
+
+

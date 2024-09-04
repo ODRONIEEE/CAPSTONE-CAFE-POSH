@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/IMages/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); /* Fully darken the image */
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a85a3e;
+    padding: 10px;
+    color: #fff;
+    height: 60px;
+}
+
+header .logo img, header .profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 100px); /* Adjusted to ensure it fits within the viewport */
+}
+
+.order-list {
+    flex: 1;
+    background-color: #f0a489;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.order-list h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.order-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-number {
+    padding: 10px;
+    background-color: #f0a489;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.order-details {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.order-box {
+    background-color: #f0a489;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.order-item {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a85a3e;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .order-list, .order-details {
+        width: 100%;
+    }
+
+    .order-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1, header .logo img, header .profile-icon img {
+        font-size: 18px;
+    }
+}

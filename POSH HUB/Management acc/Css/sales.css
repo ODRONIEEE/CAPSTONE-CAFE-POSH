@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url('/IMages/background.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1865b;
+  padding: 5px;
+}
+
+header img {
+  width: 65px;
+  height: auto;
+}
+
+.cafe-name {
+  font-size: 45px;
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+}
+
+.manager-end {
+  font-size: 22px;
+  font-style: italic;
+  color: white; 
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  
+   
+}
+
+  
+.sales-summary, .meals-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: 49%;
+  box-sizing: border-box;
+}
+
+.type {
+  font-size: 30px;
+  color: white;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.quantity {
+  font-size: 40px;
+  color: white;
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: white; 
+}
+
+.total-sales, .cup-count-section, .meal-items {
+  margin-top: 30px;
+}
+
+.total-sales span {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+  background-color: #cc8b59; 
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  margin: 7px 0;
+  border-radius: 2px;
+  width: 30%;
+  cursor: pointer;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.cup-count, .meal-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #cc8b59; 
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 7px 0;
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #d19d73;
+}
+
+.total-cup-count, .total-meal-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.total-cup-count span, .total-meal-items span {
+  font-size: 30px; 
+}
+
+.count {
+  font-size: 30px;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: #c1865b;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+
+
