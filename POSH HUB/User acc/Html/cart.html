@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History - Archive Cafe</title>
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo" onclick="goToLogoPage()">
+        </div>
+        <h1 class="cafe-name">archive cafe</h1>
+        <div class="right-icons">
+            <img class="cart-icon" src="Cart.png" alt="Add to Cart">
+            <div class="user-profile" onclick="goToProfilePage()">
+                <img src="userprof.png" alt="User Profile"> 
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Section -->
+    <div class="cart-container">
+        <a href="Menu.html"><button class="add-item-btn"onclick="toggleBack()">add item</button></a>
+
+        <div class="cart">
+            <div class="cart-header">
+                <span class="order-number">#00001</span>
+            </div>
+            <div class="cart-body">
+                <!-- Cart items -->
+                <div class="cart-item">
+                    <img src="hot cafe latte.png" alt="Hot Cafe Latte">
+                        <span class="item-name">Hot Cafe Latte</span>
+                        <span class="item-price">135.00</span>
+                        <div class="item-quantity">
+                            <button class="qty-btn" onclick="decreaseQty(1)">-</button>
+                            <span class="qty">0</span>
+                            <button class="qty-btn" onclick="increaseQty(1)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem(1)">&#10005;</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="cold americano.png" alt="Cold Americano">
+                        <span class="item-name">Cold Americano</span>
+                        <span class="item-price">135.00</span>
+                        <div class="item-quantity">
+                            <button class="qty-btn" onclick="decreaseQty(2)">-</button>
+                            <span class="qty">0</span>
+                            <button class="qty-btn" onclick="increaseQty(2)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem(2)">&#10005;</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="refresher green apple.png" alt="Refreshers Green Apple">
+                        <span class="item-name">Refreshers Green Apple</span>
+                        <span class="item-price">135.00</span>
+                        <div class="item-quantity">
+                            <button class="qty-btn" onclick="decreaseQty(3)">-</button>
+                            <span class="qty">0</span>
+                            <button class="qty-btn" onclick="increaseQty(3)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem(3)">&#10005;</button>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                <span class="total">Total: <span id="total-price">000.00</span></span>
+                <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+              </div>
+        </div>
+        
+    <footer>
+        <p>"brewing timeless moments"</p>
+    </footer>
+
+    <script src="Cart.js"></script>
+</body>
+</html>
