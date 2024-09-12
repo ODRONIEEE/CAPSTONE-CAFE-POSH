@@ -1,156 +1,232 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Image */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-  background-image: url('/IMages/background.jpg');
-  background-size: cover;
-  background-position: center;
-
+    background: url('Bgpic.JPG') no-repeat center center fixed;
+    background-size: cover;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
+/* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c1865b;
-  padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9a26e;
+    padding: 10px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header img {
-  width: 65px;
-  height: auto;
+.logo {
+    width: 50px;
+    height: 50px;
+    padding-top: 100px;
+    padding-right: 10px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    background: url('LOGOwhite.png') no-repeat center;
+    background-size: cover;
 }
 
 .cafe-name {
-  font-size: 45px;
-  text-align: center;
-  flex-grow: 1;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: white;
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    text-transform: lowercase;
 }
 
-.manager-end {
-  font-size: 22px;
-  font-style: italic;
-  color: white; 
+.cafe-name span {
+    font-style: italic;
+    font-weight: 500;
 }
 
-main {
+.user-profile {
+    width: 45px;
+    height: 45px;
+    background: url('userprof.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Body */
+/* Main container for the columns */
+.main-container {
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  
-   
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 50px 10px;
 }
 
-  
-.sales-summary, .meals-section {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  border-radius: 10px;
-  width: 49%;
-  box-sizing: border-box;
+h1 {
+  margin-bottom: 25px;
 }
-
-.type {
-  font-size: 30px;
+/* Each section styling */
+.cup-count-section, .meals-section {
+  background-color: #1f0d01b6;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
   color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 35%;
 }
 
+.cup-count-section button:hover{
+  background-color: #d9a26e;
+}
+
+.meals-section button:hover{
+  background-color: #d9a26e;
+}
+.sales-section{
+  background-color: #1f0d01b6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Div that organizes buttons and labels */
 .item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 50%;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.quantity {
-  font-size: 40px;
-  color: white;
-  margin-left: 10px;
-}
-
-h2 {
-  text-align: center;
-  color: white; 
-}
-
-.total-sales, .cup-count-section, .meal-items {
-  margin-top: 30px;
-}
-
-.total-sales span {
-  font-size: 20px;
-  margin: 10px 0;
-  text-align: center;
-  background-color: #cc8b59; 
+.item button {
+  background-color: #a9734d;
   border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
   color: white;
-  padding: 15px 25px;
-  margin: 7px 0;
-  border-radius: 2px;
-  width: 30%;
+  font-size: 19px;
   cursor: pointer;
-  font-size: 20px;
-  box-sizing: border-box;
+  flex-grow: 1;
 }
 
-.cup-count, .meal-items {
+.item span {
+  margin-left: 10px;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Make buttons and labels vertical */
+.buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-button {
-  background-color: #cc8b59; 
+.total-sales span{
+  background-color: #a9734d;
   border: none;
-  color: white;
-  padding: 10px 15px;
-  margin: 7px 0;
   border-radius: 25px;
-  width: 100%;
+  padding: 10px 15px;
+  color: white;
+  font-size: 19px;
   cursor: pointer;
-  font-size: 18px;
-  box-sizing: border-box;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
-button:hover {
-  background-color: #d19d73;
+.total-sales p{
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.total-cup-count, .total-meal-items {
+.total-quantity span{
+  background-color: #a9734d;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.total-quantity p{
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Hot/Cold buttons */
+.hot-cold-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
-.total-cup-count span, .total-meal-items span {
-  font-size: 30px; 
-}
-
-.count {
-  font-size: 30px;
+.hot-cold-buttons button {
+  background-color: #d5a87a;
   color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 24px;
+  margin: 0 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.hot-button {
+  background-color: #f28c28;
+}
+
+.cold-button {
+  background-color: #1d82c4;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  background-color: #c1865b;
-  padding: 10px;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
+    background-color: #d9a26e;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
 }
 
+footer p {
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+  }
 
+  .hot-cold-buttons {
+      margin: 20px 0;
+  }
+
+  .buttons button {
+      width: 100%;
+      max-width: 150px;
+  }
+}

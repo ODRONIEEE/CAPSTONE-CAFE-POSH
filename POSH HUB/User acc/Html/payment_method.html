@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="Cart.html"><img src="white logo.png" alt="Logo" class="logo"></a>
+        <div class="title">archive cafe</div>
+        <a href="cart-link.html"><img src="cartt.png" alt="Cart" class="cart"></a>
+    </header>
+
+    <main>
+        <div class="tag-container">
+            <span class="tag">#00001</span>
+            <span class="tag">Payment</span>
+        </div>
+
+        <div class="container">
+            <div class="button-group">
+                <div class="button" id="online-payment" onclick="swapPositionsAndRedirect('Online.html')">
+                    <p>Online Payment</p>
+                    <small>Gcash payment</small>
+                </div>
+                <div class="button" id="over-counter" onclick="swapPositionsAndRedirect('Counter.html')">
+                    <p>Over the Counter</p>
+                    <small>Payment over the cashier</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>brewing timeless moments</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

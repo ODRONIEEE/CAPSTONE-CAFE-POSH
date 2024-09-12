@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="#" class="logo-container">
+            <img src="whitelogo.png"A Logo class="logo">
+        </a>
+
+        <div class="quote">archive <span class="italic">cafe</span></div>
+
+        <div class="profile-container">
+            <img src="iconn.png" alt="Profile Icon" class="profile-icon">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <a href="FoodMenu.html" class="back-button" id="back-button" style="display: none;">&#8592;</a>
+            <button onclick="showItems('food')">Food</button>
+            <button onclick="showItems('pasta')">Pasta</button>
+            <button onclick="showItems('burgers')">Burgers</button>
+            <button onclick="showItems('appetizers')">Appetizers</button>
+            <button onclick="showItems('riceMeal')">Rice Meal</button>
+        </div>
+
+        <div class="main-content">
+            <div class="item-list" id="item-list">
+                <div class="food-category" id="food-items" style="display: none;">
+                    <button onclick="selectItem('Chicken Alfredo')">Chicken Alfredo</button>
+                    <button onclick="selectItem('Chicken Pomodoro')">Chicken Pomodoro</button>
+                    <button onclick="selectItem('Shrimp Pesto')">Shrimp Pesto</button>
+                </div>
+
+                <div class="food-category" id="pasta-items" style="display: none;">
+                    <button onclick="selectItem('Spaghetti Carbonara')">Spaghetti Carbonara</button>
+                    <button onclick="selectItem('Penne Arrabbiata')">Penne Arrabbiata</button>
+                    <button onclick="selectItem('Fettuccine Alfredo')">Fettuccine Alfredo</button>
+                </div>
+
+                <div class="food-category" id="burgers-items" style="display: none;">
+                    <button onclick="selectItem('Cheeseburger')">Cheeseburger</button>
+                    <button onclick="selectItem('Veggie Burger')">Veggie Burger</button>
+                    <button onclick="selectItem('Chicken Burger')">Chicken Burger</button>
+                </div>
+
+                <div class="food-category" id="appetizers-items" style="display: none;">
+                    <button onclick="selectItem('Spring Rolls')">Spring Rolls</button>
+                    <button onclick="selectItem('Bruschetta')">Bruschetta</button>
+                    <button onclick="selectItem('Mozzarella Sticks')">Mozzarella Sticks</button>
+                </div>
+
+                <div class="food-category" id="riceMeal-items" style="display: none;">
+                    <button onclick="selectItem('Chicken Fried Rice')">Chicken Fried Rice</button>
+                    <button onclick="selectItem('Beef Stir Fry')">Beef Stir Fry</button>
+                    <button onclick="selectItem('Vegetable Pilaf')">Vegetable Pilaf</button>
+                </div>
+            </div>
+
+            <div class="item-details">
+                <h1 id="selected-item">Select a Food Item</h1>
+                <p>Description</p>
+
+                <div class="quantity">
+                    <button onclick="decrement()">-</button>
+                    <input type="text" id="quantity-input" value="0" readonly>
+                    <button onclick="increment()">+</button>
+                </div>
+            </div>
+
+            <div class="cart">
+                <a href="cart.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>“brewing timeless moments”</p>
+    </div>
+
+    <script>
+        function showItems(category) {
+            document.getElementById('back-button').style.display = 'inline-block';
+
+            document.querySelectorAll('.food-category').forEach(function (el) {
+                el.style.display = 'none';
+            });
+
+            document.getElementById(category + '-items').style.display = 'flex';
+        }
+
+        function selectItem(itemName) {
+            document.getElementById('selected-item').innerText = itemName;
+        }
+
+        function increment() {
+            const input = document.getElementById('quantity-input');
+            let value = parseInt(input.value);
+            value += 1;
+            input.value = value;
+        }
+
+        function decrement() {
+            const input = document.getElementById('quantity-input');
+            let value = parseInt(input.value);
+            if (value > 0) {
+                value -= 1;
+                input.value = value;
+            }
+        }
+    </script>
+</body>
+</html>

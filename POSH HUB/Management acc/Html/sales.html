@@ -3,93 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive Cafe - Sales Page</title>
-    <link rel="stylesheet" href="../Css/sales.css">
+    <title>Sales Page</title>
+    <link rel="stylesheet" href="Sales.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="/IMages/logowhite.png" alt="Cafe Logo">
-            <div class="cafe-name">archive cafe</div>
-            <div class="manager-end">Manager</div>
-        </header>
-        <main>
-            <div class="sales-summary">
-                <h2>SALES</h2>
-                <div class="total-sales">
-                    <h2>Total Sales</h2>
-                    <span id="total-sales">Php 0000.00</span>
-                </div>
-                <div class="cup-count-section">
-                    <div class="hot">
-                        <div class="type">H</div>
-                    </div>
-                    <h2>Cup Count</h2>
-                    <div class="cup-count">
-                        <div class="item">
-                            <button data-item="Coffee">Coffee</button>
-                            <span class="quantity" id="coffee-quantity">0</span>
-                          </div>
-                          <div class="item">
-                            <button data-item="Non-Coffee">Non-Coffee</button>
-                            <span class="quantity" id="non-coffee-quantity">0</span>
-                          </div>
-                          <div class="item">
-                            <button data-item="Refreshers">Refreshers</button>
-                            <span class="quantity" id="refreshers-quantity">0</span>
-                          </div>
-                          <div class="item">
-                            <button data-item="Tea">Tea</button>
-                            <span class="quantity" id="tea-quantity">0</span>
-                          </div>
-                        </div>
-                    <div class="total-cup-count">
-                        <span>Total:</span>
-                        <div class="count" id="coffee-count">0</div>
-                    </div>
-                </div>
+
+    <header class="header">
+        <div class="logo" onclick="goToLogoPage()">
+        </div>
+        <h1 class="cafe-name">archive <span>cafe</span></h1>
+        <a href="user-profile-page.html" class="user-profile"></a>
+         
+
             </div>
-            <div class="meals-section">
-                <div class="cold">
-                    <div class="type">C</div>
-                </div>
-                <h2>Meals</h2>
-                <div class="meal-items">
-                    <div class="item">
-            <button data-item="Pastries">Pastries</button>
-            <span class="quantity" id="pastries-quantity">0</span>
-          </div>
-          <div class="item">
-            <button data-item="Pasta">Pasta</button>
-            <span class="quantity" id="pasta-quantity">0</span>
-          </div>
-          <div class="item">
-            <button data-item="Rice Meal">Rice Meal</button>
-            <span class="quantity" id="rice-meal-quantity">0</span>
-          </div>
-          <div class="item">
-            <button data-item="Burger">Burger</button>
-            <span class="quantity" id="burger-quantity">0</span>
-          </div>
-          <div class="item">
-            <button data-item="Appetizer">Appetizer</button>
-            <span class="quantity" id="appetizer-quantity">0</span>
-          </div>
         </div>
-        <div class="total-meal-items">
-          <span>Total:</span>
-          <div class="count" id="meals-count">0</div>
-        </div>
+    </header>
+
+    <!-- Body Section -->
+    <div class="main-container">
+      <!-- Cup Count Section -->
+      <div class="cup-count-section">
+          <h1>Cup Count</h1>
+                    <div class="buttons">
+              <div class="item">
+                  <button onclick="addItem('Coffee')">Coffee</button>
+                  <span id="coffee-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Non-Coffee')">Non-Coffee</button>
+                  <span id="non-coffee-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Refreshers')">Refreshers</button>
+                  <span id="refreshers-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Tea')">Tea</button>
+                  <span id="tea-count">0</span>
+              </div>
+          </div>
       </div>
-        </main>
-        <footer>
-            <span>"brewing timeless moments"</span>
-        </footer>
-    </div>
-    <script src="../JS/sales.js"></script>
+  
+      <!-- Meals Section -->
+      <div class="meals-section">
+          <h1>Meals</h1>
+          <div class="buttons">
+              <div class="item">
+                  <button onclick="addItem('Pastries')">Pastries</button>
+                  <span id="pastries-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Pasta')">Pasta</button>
+                  <span id="pasta-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Rice Meal')">Rice Meal</button>
+                  <span id="rice-meal-count">0</span>
+              </div>
+              <div class="item">
+                  <button onclick="addItem('Appetizer')">Appetizer</button>
+                  <span id="appetizer-count">0</span>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Sales Section -->
+      <div class="sales-section">
+          <h1>Sales</h1>
+          <div class="buttons">
+              <div class="total-sales">
+              <p>Total Sales: <span id="total-sales">Php 0000.00</span></p>
+            </div>
+            <br><br>
+            <div class="total-quantity">
+              <p>Total Quantity: <span id="total-quantity">0</span></p>
+            </div>
+      </div>
+  </div>
+  
+    <footer>
+        <p>"brewing timeless moments"</p>
+    </footer>
+
+    <script src="Sales.js"></script>
 </body>
 </html>
-
-
-
-

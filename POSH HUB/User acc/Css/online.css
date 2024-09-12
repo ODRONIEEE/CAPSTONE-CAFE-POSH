@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bg.JPG') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles matching the source code */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A16B45;
+}
+
+.logo img, .cart img {
+    width: 40px;
+    height: 40px;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.title span {
+    color: #D9CAB3;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.left-side, .center-side, .right-side {
+    flex: 1;
+    padding: 1rem;
+}
+
+.left-side {
+    text-align: center;
+}
+
+.left-side h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.center-side {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.order-info, .total-info {
+    background-color: #000;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.total-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.payment-options {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.payment-logo {
+    width: 60px;
+    margin-right: 1rem;
+}
+
+/* Footer styles matching the source code */
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #8B5E34;
+    color: white;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
