@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.6) url('/IMages/background.jpg') no-repeat center center fixed;
+    background: rgba(0, 0, 0, 0.6) url('../../IMages/bg2.JPG') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -30,6 +30,7 @@ header {
 }
 
 h1 {
+    font-family: 'Aver', sans-serif;
     color: white;
     font-size: 24px;
 }
@@ -55,6 +56,7 @@ main {
 }
 
 h2 {
+    font-family: 'Aver', sans-serif;
     font-size: 36px;
     color: #fff;
     margin-bottom: 70px; /* Slightly more margin below the title */
@@ -68,6 +70,7 @@ h2 {
 }
 
 .btn {
+    font-family: 'Aver', sans-serif;
     background-color: black;
     padding: 20px 35px;
     border-radius: 30px;
@@ -97,6 +100,7 @@ h2 {
 }
 
 footer {
+    font-family: 'Aver',sans-serif;
     background-color: #8a4b29;
     padding: 15px;
 }

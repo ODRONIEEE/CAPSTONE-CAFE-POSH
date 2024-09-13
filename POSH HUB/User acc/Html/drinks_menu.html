@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu-Drinks</title>
     <link rel="stylesheet" href="../Css/drinks_menu.css">
+    <link href="https://fonts.cdnfonts.com/css/aver" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
-        <a href="../Html/home.html" class="logo"></a>
-        <h1 class="cafe-name">archive <span>cafe</span></h1>
-        <a href="../Html/dashboard.html" class="user-profile"></a>
-         
-
-            </div>
+    <header>
+        <div class="logo">
+            <a href="../../User acc/Html/home.html"><img src="../../IMages/logobrown.png" alt="Logo"></a>
+        </div>
+        <div class="title">
+            archive <span>cafe</span>
+        </div>
+        <div class="profile">
+            <a href="/User acc/Html/login.html">
+                <img src="../../IMages/icon.png" alt="Profile">
+            </a>
         </div>
     </header>
 
     <!-- Body Section -->
     <div class="menu-container">
         <nav class="category-menu">
+            <button class="terms-btn" onclick="window.location.href='menu_landing.html'">Back</button>
             <button onclick="showCategory('coffee')">Coffee</button>
             <button onclick="showCategory('non-coffee')">Non-Coffee</button>
             <button onclick="showCategory('refreshers')">Refreshers</button>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('/IMages/background.jpg') no-repeat center center fixed;
+    background: url('../../IMages/background.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     color: #000;
@@ -35,11 +35,13 @@ header .logo img {
 }
 
 header .title {
+    font-family: aver, sans-serif;
     font-size: 28px;
     font-weight: bold;
 }
 
 header .title span {
+    font-family: aver, sans-serif;
     font-style: italic;
     color: #f0d8c1;
 }

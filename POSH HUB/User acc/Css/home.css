@@ -1,10 +1,10 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: aver, sans-serif;
     background-color: #4d2b2b;
     color: #ffffff;
-    background-image: url('/IMages/background.jpg');
+    background-image: url('../../IMages/background.jpg') no-repeat center center fixed;
     background-position: center;
     height: 100vh;
     display: flex;

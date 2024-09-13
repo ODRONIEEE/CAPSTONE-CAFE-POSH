@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/IMages/background.jpg');
+    background-image: url('../../IMages/bg3.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,6 +41,7 @@ header {
 }
 
 .header-title {
+    font-family: 'Aver', sans-serif;
     color: white;
     font-size: 24px;
     text-align: center;
@@ -61,6 +62,7 @@ header {
 }
 
 .title-container h1 {
+    font-family: 'Aver', sans-serif;
     font-size: 36px;
     margin: 20px 0;
 }
@@ -155,6 +157,7 @@ header {
 }
 
 footer {
+    font-family: 'Aver', sans-serif;
     text-align: center;
     padding: 10px;
     background-color: #A05D3B;

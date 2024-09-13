@@ -7,7 +7,7 @@
 
 /* Background Image */
 body {
-    background: url('/IMages/background.jpg') no-repeat center center fixed;
+    background: url('../../IMages/bg3.JPG') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -16,24 +16,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d9a26e;
-    padding: 10px 20px;
+    background-color: #b37452;
     color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 1px 20px; 
+    position: relative;
+    z-index: 1;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    padding-top: 100px;
-    padding-right: 10px;
-    margin-bottom: -20px;
-    margin-top: -20px;
-    background: url('LOGOwhite.png') no-repeat center;
-    background-size: cover;
+header .logo img {
+    height: 80px;
+    margin-left: -10px; 
+    cursor: pointer;
 }
+
+header .title {
+    font-family: 'Aver', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .title span {
+    font-family: 'Aver', sans-serif;
+    font-family: aver, sans-serif;
+    font-style: italic;
+    color: #f0d8c1;
+}
+
+header .profile img {
+    height: 50px;
+    cursor: pointer;
+}
+
+
 
 .cafe-name {
     font-size: 36px;
@@ -55,19 +69,30 @@ header {
     cursor: pointer;
 }
 
-
+.back-btn {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
 /* Body *//* Menu */
 .menu-container {
     padding: 30px;
 }
 
 .category-menu {
+    font-family: 'Aver', sans-serif;
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
 .category-menu button {
+    font-family: 'Aver', sans-serif;
     padding: 10px 90px;
     background-color: #a9734d;
     color: white;

@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('/IMages/background.jpg');
+    font-family: 'Aver', sans-serif;
+    background-image: url('../../IMages/bg3.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -58,7 +58,8 @@ header {
     text-align: center;
 }
 
-.header-text span {
+.header-text  {
+    font-family: aver, sans-serif;
     font-style: italic;
 }
 
@@ -151,6 +152,7 @@ main {
 }
 
 footer {
+    font-family: 'Aver', sans-serif;
     text-align: center;
     padding: 20px;
     background-color: #A05D3B;
