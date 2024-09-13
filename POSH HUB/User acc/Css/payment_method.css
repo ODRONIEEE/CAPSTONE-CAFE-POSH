@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     background-color: #b57f3a;
-    background-image: url('bg.JPG');
+    background-image: url('/IMages/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
