@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     background-color: #b57f3a;
-    background-image: url('/IMages/background.jpg');
+    background-image: url('../../IMages/bg1.JPG');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -25,6 +25,8 @@ header {
 }
 
 .title {
+    font-family: 'Aver', sans-serif;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
@@ -89,6 +91,7 @@ main {
 }
 
 footer {
+    font-family: 'Aver', sans-serif;
     text-align: center;
     padding: 5px;
     background-color: #8B5E34;

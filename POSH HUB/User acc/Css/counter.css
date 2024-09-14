@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: url('/IMages/background.jpg');
+    background: url('../../IMages/bg1.JPG');
     background-position: center;
     background-size: cover;
     background-color: rgba(0,0,0,0.5);
@@ -30,6 +30,8 @@ header {
 }
 
 .title {
+    font-family: 'Aver', sans-serif;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
@@ -90,6 +92,8 @@ main {
 }
 
 footer {
+    font-family: 'Aver', sans-serif;
+    color: white;
     text-align: center;
     padding: 15px;
     background-color: #8B5E34;

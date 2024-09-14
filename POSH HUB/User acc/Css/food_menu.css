@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/IMages/background.jpg');
+    background-image: url('../../IMages/bg3.JPG');
     background-size: cover;
     background-position: center;
     color: #000;
@@ -51,6 +51,7 @@ body::before {
 }
 
 .quote {
+    font-family: 'Aver', sans-serif;
     font-size: 30px;
     color: #fff;
     text-align: center;
@@ -183,6 +184,7 @@ body::before {
 }
 
 .footer {
+    font-family: 'Aver', sans-serif;
     background-color: rgba(215, 169, 119, 0.9);
     color: #3e2723;
     text-align: center;

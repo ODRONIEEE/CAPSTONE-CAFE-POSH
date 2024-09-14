@@ -49,6 +49,7 @@ header .title span {
 header .profile img {
     height: 50px;
     cursor: pointer;
+    margin-left: -10px; 
 }
 
 main {
@@ -126,6 +127,8 @@ main {
 }
 
 footer {
+    font-family: aver, sans-serif;
+
     background-color: #b37452;
     color: #fff;
     text-align: center;

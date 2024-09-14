@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('/IMages/background.jpg');
+    background-image: url('../../../IMages/bg1.JPG');
     background-size: cover;
     background-position: center;
     color: black;
@@ -28,6 +28,7 @@ body {
   }
   
   h1 {
+    font-family: 'Aver', sans-serif;
     color: white;
     font-size: 24px;
     margin: 0;
@@ -141,7 +142,7 @@ body {
 
   footer {
     text-align: center;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Aver', sans-serif;
       font-size: 25px;
       background-color: #c1865b;
       padding: 1px;
