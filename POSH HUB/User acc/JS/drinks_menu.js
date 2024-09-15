@@ -76,5 +76,5 @@ function selectSyrup(syrup) {
 
 // Place order
 function placeOrder() {
-    alert("Order placed successfully!");
+    alert("Added to cart");
 }
