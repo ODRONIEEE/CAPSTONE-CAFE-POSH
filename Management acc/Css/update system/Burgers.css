@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../../../IMages/bg1.JPG');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #c1865b;  
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #logo img{
+    height: 70px;
+    width: 65px;
+  }
+  #user-profile img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-family: 'Aver', sans-serif;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    
+  }
+  
+  
+  button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+  
+  }
+  
+  
+  .back-button {  
+    color: black;
+    border: none;
+    padding: 12px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-width: 50px;
+    margin-right: 250px;
+  
+    
+  }
+  
+  .back-button:hover {
+    background-color: #925e3d;;
+  }
+  
+  .back-button:active {
+    background-color: green;
+  }
+  
+  .update-system-button{
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    border-width: 50px;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: 175px;
+  }
+  
+  .burgers-button{
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    border-width: 40px;
+    padding-left: 550px;
+    padding-right: 550px;
+  
+    
+  }
+  
+  .edit-button {
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .edit-button:hover {
+   background-color: #925e3d;
+  }
+
+  .edit-button:active {
+  background-color: green;
+  }
+
+  footer {
+    text-align: center;
+      font-family: 'Aver', sans-serif;
+      font-size: 25px;
+      background-color: #c1865b;
+      padding: 1px;
+      font-style: italic;
+      font-weight: bold;
+      color: white;
+      padding: 0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content,
+  .confirmation-content {
+    background-color: #D4A76A;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-content label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    font-size: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-button {
+    background-color: #B35A47;
+  }
+  
+  .save-button {
+    background-color: #A06344;
+  }
+  
+  .confirmation-content h2 {
+    font-size: 28px;
+    color: #70421B;
+    background-color: #B35A47;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  
+  
+  /* Responsive Image Example */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* For larger screens */
+  @media only screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+  
+    .non-coffee {
+        margin-top: 40px;
+    }
+  }
+  
+  /* For smaller screens (e.g., mobile devices) */
+  @media only screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+  
+    .back-button, .update-system {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  
+    .non-coffee {
+        margin-top: 20px;
+    }
+  }
+  
+  /* Extra small devices (phones, 320px and up) */
+  @media only screen and (max-width: 480px) {
+    .back-button, .update-system, .non-coffee {
+        font-size: 0.9rem;
+    }
+  
+    .header {
+        padding: 15px;
+    }
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,117 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.6) url('../../IMages/bg2.JPG') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8a4b29;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Aver', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+h1 span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.profile {
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+    padding: 50px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Aver', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 70px; /* Slightly more margin below the title */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px; /* Increased gap between buttons */
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-family: 'Aver', sans-serif;
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.logo-brown {
+    width: 250px; /* Larger size like in the reference */
+}
+
+.title-img {
+    width: 400px; /* Larger size like in the reference */
+}
+
+footer {
+    font-family: 'Aver',sans-serif;
+    background-color: #8a4b29;
+    padding: 15px;
+}
+
+footer p {
+    font-style: italic;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+}
